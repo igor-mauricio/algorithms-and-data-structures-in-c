@@ -95,7 +95,7 @@ void *pop(LinkedList *self) {
         self->head = NULL;
         self->tail = NULL;
         free(node);
-        return node;
+        return value;
     }
 
     Node *before_last = get_node_at(self, self->size-1);
